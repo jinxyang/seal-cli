@@ -1,0 +1,44 @@
+{
+  "name": "@jinxyang/seal-cli",
+  "version": "0.0.1",
+  "description": "cli for seal",
+  "bin": "./bin/seal.js",
+  "scripts": {
+    "prepare": "husky install",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinxyang/seal-cli.git"
+  },
+  "keywords": [
+    "seal",
+    "cli"
+  ],
+  "author": "Jinxyang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jinxyang/seal-cli/issues"
+  },
+  "homepage": "https://github.com/jinxyang/seal-cli#readme",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "2.6.2"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "standard-version": "^9.3.2"
+  }
+}
